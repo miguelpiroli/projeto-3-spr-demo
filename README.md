@@ -54,22 +54,27 @@ O nome não precisa ser único.
 O preço não pode ser negativo.
 
 
-
-
 CASOS DE TESTE:
 
 1. Cadastro válido
 name="Teclado", price=120.50
 Produto salvo e exibido
 
-3. Nome muito curto
- 	name="T", price=50
+2. Nome muito curto
+ 	entrada:name="T", price=50
  		Erro de validação
- Preço negativo
- 	name="Mouse", price=-10
+   
+ 3. Preço negativo
+ 	entrada:name="Mouse", price=-10
  Erro de validação
-10. Lista vazia	Nenhum produto cadastrado	Mensagem: “Nenhum produto cadastrado”
-11. Múltiplos cadastros	3 produtos diferentes	IDs 1, 2, 3 em ordem
+ 
+4 Lista vazia
+entrada:Nenhum produto cadastrado
+Mensagem: “Nenhum produto cadastrado”
+
+5. Múltiplos cadastros
+entrada: 3 produtos diferentes
+ IDs 1, 2, 3 em ordem
 
 
  Estrutura do Projeto
